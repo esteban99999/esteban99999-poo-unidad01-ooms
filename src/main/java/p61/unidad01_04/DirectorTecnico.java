@@ -10,15 +10,13 @@ package p61.unidad01_04;
  */
 public class DirectorTecnico extends Persona {
     
-    private String nombre;
-    private int fechaNacimiento;
+    
     private String nacionalidad;
     private int yearsTrayectoria;
     
     public String mostrarInfoTecnico(){
-        return "El técnico se llama: "+this.nombre+" es de nacionalidad"
-                +this.nacionalidad+" Nació en el año:"
-                +this.fechaNacimiento+" tiene "+this.yearsTrayectoria
+        return this.mostrarInfoTecnico()+" es de nacionalidad"+this.nacionalidad
+                +" tiene "+this.getYearsTrayectoria()
                 +" años de trayectoria";
     }
     
